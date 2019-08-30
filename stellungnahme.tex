@@ -1,0 +1,216 @@
+% Mitgliedsantrag für FunkFeuer Wien, 2019
+%
+% Basierend auf den LaTeX-Templates für Verträge von housing.funkfeuer.at
+% sowie dem FunkFeuer-Mitgliedsantragsformular von 2013
+
+\documentclass[parskip=half]{scrreprt}
+
+\usepackage{pdfpages}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{lmodern}
+\usepackage[juratotoc]{scrjura}
+%\usepackage[margin=2cm]{geometry}
+%\usepackage{geometry}
+% \usepackage[textheight=8in,footskip=60pt,bottom=1in]{geometry}
+\usepackage[a4paper,margin=1.5cm,top=1.6cm,bottom=4cm]{geometry}
+\usepackage{lastpage}
+\usepackage{fancyhdr}% headers
+\usepackage{graphicx} % logo include
+\usepackage{color} % text colors
+\usepackage{setspace}
+
+\usepackage{paratype} % font
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+
+\usepackage{amssymb}
+\usepackage{url}
+
+% FunkFeuer Colors
+\definecolor{ff-dark}{RGB}{39,49,66}
+\definecolor{ff-grey}{RGB}{85,98,112}
+\definecolor{ff-light}{RGB}{105,145,170}
+\definecolor{ff-red}{RGB}{242,58,20}
+\definecolor{ff-green}{RGB}{161,200,32}
+
+
+\usepackage{wrapfig}
+
+% header
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\includegraphics[width=3.9cm]{funkfeuer_wien.pdf}}
+%\fancyhead[L]{\textcolor{ff-grey}{\textbf{Verein zur Förderung freier Netze} - ZVR: 814804682} \\
+%	\textcolor{ff-grey}{Postfach 44, 1016 Wien, Österreich}}
+%\fancyhead[L]{\textcolor{ff-grey}{\textbf{Verein zur Förderung freier Netze}\\ZVR: 814804682}
+\fancyhead[L]{\textcolor{ff-grey}{\textbf{Verein zur Förderung freier Netze}\\\small vorstand@funkfeuer.at}
+}
+
+% footer
+%\fancyfoot[L]{\vskip -10pt~\includegraphics[width=1.5cm]{logo.pdf}}
+% \fancyfoot[C]{\textcolor{ff-dark}{FunkFeuer Wien - ZVR: 814804682 \\Postfach 5  ·  1096 Wien \\ IBAN: AT552023000000143982  ·  BIC/SWIFT: SPLSAT21}}
+\fancyfoot[L]{
+\begin{wrapfigure}{L}{1.6cm}
+\vspace{-15pt}
+\includegraphics[width=1.75cm]{logo.pdf}
+\end{wrapfigure}
+\vspace{-5pt}
+\fontsize{7}{8} \selectfont
+\textcolor{ff-grey}{\hspace*{-1mm}Postanschrift:\\FunkFeuer Wien\\ Postfach 44\\ 1016 Wien}
+}
+\fancyfoot[C]{\fontsize{7}{8} \selectfont \textcolor{ff-grey}{\\ZVR: 814804682\\UID: ATU67830859\\BIC/SWIFT: SPLSAT21\\ IBAN: AT552023000000143982}
+}
+\fancyfoot[R]{\textcolor{ff-grey}{\thepage/\pageref{LastPage}}}
+
+% lines
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\headrule}{\hbox to\headwidth{%
+  \color{ff-green}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrulewidth}{0.5pt}
+\renewcommand{\footrule}{\hbox to\headwidth{%
+  \color{ff-light}\leaders\hrule height \footrulewidth\hfill}}
+% section colors
+\usepackage{sectsty} % autocolor sections
+\chapterfont{\color{ff-grey}}  % sets colour of chapters
+\sectionfont{\color{ff-grey}}  % sets colour of sections
+% Text color
+\color{ff-dark}
+
+
+
+\begin{document}
+\section*{\\Stellungnahme des Vereins FunkFeuer Wien zur RTR RVON 5/2018}
+\thispagestyle{fancy}
+
+Sehr geehrte Damen und Herren von der RTR!
+
+Der Verein FunkFeuer Wien, Verein zur Förderung freier Netze
+(ZVR 814804682), nimmt hiermit Stellung zur Konsultation
+RVON 5/2018 bezüglich Richtsätze für Wertminderung durch
+Antennentragemasten und Leitungsrechte.
+
+
+\subsection*{Stellungnahme zur Vorlage im Detail}
+
+\begin{description}
+
+\item[§2, Zielgruppe der Vorlage.] Die Vorlage zielt dem TKG 2003
+entsprechend auf Bereitsteller öffentlicher Kommunikationsnetze ab.
+Wir regen an, die angepeilte Zielgruppe insofern zu erweitern, als dass
+sowohl im nicht-kommerziellen (z.B. Vereins-) wie auch im privaten
+Bereich ein Interesse an der geregelten Nutzung von Antennenstandorten
+besteht. Dieses ist besonders in Gebieten anzutreffen, wo kommerzielle
+Betreiber kein technisches Portfolio, keine ökonomischen Anreize
+oder kein strategisches Interesse an einer Versorgung haben.
+\textbf{Daraus leiten wir den Wunsch ab, explizite, angepasste
+Kostensätze für nichtkommerzielle Nutzung und Regeln für deren
+Verfügbarkeit zu definieren.}
+
+\item[Wunsch: Rahmenverträge.] Für eine effiziente Nutzbarmachung von
+Antennenstandorten sehen wir es weiters als sinnvoll an, seitens der
+RTR ein Rahmenvertragswerk anzubieten, das die notwendigen Vereinbarungen
+kodifiziert und die Notwendigkeit separater bilateraler (aber insgesamt
+inhaltlich jeweils annähernd identischer) Vertragsverhandlungen
+zwischen den den Standort bzw. den Infrastrukturaufbau vertretenden
+Parteien minimiert.
+
+\item[§1, Mögliche Redundanzen zum TKG 2003.] Einige Definitionen in der
+Vorlage scheinen sich mit Begriffsbestimmungen im TKG 2003 zu
+überschneiden bzw. diese inhaltlich, aber unter einem neuem Begriff zu
+doppeln. Beispielsweise definiert §1 der Vorlage ,,Inhouse-Infrastruktur'',
+im Vergleich zum TKG §3 ,,gebäudeinterne physische Infrastruktur''.
+
+\item[§8, Umfang des Richtsatzes 4.] Wird mit dem einmaligen Betrag
+nach Richtsatz eine Antenne, ein Mast, ein Gebäude, ein Grundstück,
+etwas anderes abgegolten?
+
+\item[Pauschalisierung.] Die Berechnungen zum
+,,Beispiel 1'' in den
+Erläuterungen ergeben eine Wertminderung von 13 Euro 65 für eine
+Künette von 30 Laufmetern Länge. Beträge wie diese überhaupt zu
+fakturieren und zu bezahlen verursacht mehr Aufwand, als es Umsatz
+bringt. Insofern wäre eine Pauschalisierung (d.h. ein jedenfalls zu
+entrichtender Mindestbetrag, falls sich eine Wertminderung unter
+einer gewissen Schwelle ergibt) oder sogar eine Bagatellgrenze
+(d.h. ein Betrag, unterhalb dessen überhaupt keine Wertminderung
+abzugelten wäre) überlegenswert. Einer absichtlichen ,,Stückelungen''
+von Abgeltungen könnte einerseits durch entsprechende zeitliche oder
+funktionale Gruppierung in der Bewertung vorgegriffen werden,
+andererseits ließe sich auch der Kreis der Nutznießer\_innen für
+eine Pauschal- oder Bagatellregelung einschränken, beispielsweise
+auf die erwähnten Privatpersonen oder Vereine.
+
+
+
+\end{description}
+
+
+
+
+
+\subsection*{Stellungnahme zu den Erläuterungen im Detail}
+
+\begin{description}
+
+\item[Zielgruppe.] Die Erläuterungen erwähnen als explizites Ziel
+der Vorlage die ,,Förderung der Standortqualität''. Wir unterstreichen,
+dass zu dieser Förderung neben den in der Vorlage angesprochenen
+kommerziellen Betreibern in maßgeblichem Umfang auch nichtkommerziell
+orientierte Initiativen, Privatpersonen, Vereine, Funkamateur\_innen
+usw. beitragen.
+
+\item[Notwendigkeit der Erläuterungen.] Ohne die von der RTR im
+Rahmen der Konsultationsunterlagen zur Verfügung gestellten
+,,Erläuterung'' ist ein Verständnis der Inhalte, insbesondere aber
+auch der Motivationen der konkreten Ausgestaltung der Vorlage,
+schwierig bis unmöglich. Das gilt beispielsweise für die
+Erläuterungen zum Flächenbedarf in §7 oder das Zustandekommen
+der angeführten Richtsätze. 
+
+\item[Einschränkung auf Bauland und Grünland.] Wie der Abschnitt
+,,Begriffsbestimmungen'' im \textit{Besonderen Teil} der Erläuterungen
+zur Vorlage festhält, werden für Flächen und Widmungen abseits von
+Bauland und Grünland keine Richtsätze vorgeschlagen. Gleichzeitig
+erkennt die Erläuterung die Existenz anderer Flächen- und Widmungstypen
+an. Wir erachten eine Erweiterung der Richtsätze unter der oben genannten
+Prämisse der Erweiterung der Zielgruppe auf Privatpersonen, Vereine
+usw. als notwendig, zumal Kommunikationsinfrastruktur bereits heutzutage
+in großem Ausmaß entlang von Straßen, Bahnstrecken, Gas-, Strom- und Fernwärmeleitungen etc. geführt wird.
+
+\item[Einschränkung der Verbindlichkeit.] Auf Seite 2 (mitte) der
+Erläuterungen wird eingeschränkt, dass die Richtsätze im Vorschlag
+gerade \textit{keine} verbindliche Anordnung seien. Wir bestreiten
+keinesfalls die Konsistenz dieser Einschränkung mit dem TKG 2003,
+bemerken aber auch, dass der Verordnung von Richtsätzen insofern
+ein allermeistens nur informativer Charakter zukommen wird und nicht
+nur kaum grundsätzliche Vereinfachungen von Vertragsverhandlungen
+zwischen Beteiligten schaffen wird, sondern vielmehr geradezu eine
+Einladung darstellt, die Regulierungsbehörde in verstärktem Maße
+in per se triviale und unumstrittene Verfahren zu involvieren.
+
+\item[Richtsatzbildung.] Die Diskussion der Richtsatzbildung ist
+dankenswerterweise sehr offen. Wir kritisieren allerdings die
+Verwendung kommerziell gesammelter Daten für Richtsatz 1; während
+wir dessen Open-Data-Qualität ausdrücklich anerkennen und die
+beschriebene Methodik (Medianpreise aus Grundbuchtransaktionen)
+plausibel erscheint, würden wir die direkte und ausschließliche
+Nutzung statistischer Daten der öffentlichen Hand empfehlen.
+Das würde zusätzlich die Flexibilität in der Bewertung stark
+divergierender Werte pro Region ermöglichen, eine Divergenz,
+die sowohl in der Beschreibung der IMMOunited-Datenquelle z.B.
+für Wien (,,heterogene Preislage'') genannt wird, als auch der
+oben besprochenen Einschränkung der Verbindlichkeit der vorgeschlagenen
+Verordnung gemäß TKG zugrunde zu liegen scheint.
+
+\end{description}
+
+\vspace{1.5cm}
+
+Für den Verein FunkFeuer Wien
+
+Vorname Nachname (Funktion)
+
+
+\end{document}
